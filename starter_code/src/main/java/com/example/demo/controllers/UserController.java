@@ -68,7 +68,7 @@ public class UserController {
 						.getConfirmPassword())){
 			userlogger
 					.error("Exception: User was not created" +
-							", Issue: password is smaller than 7 characters " +
+							", Issue: password is bigger than 7 characters " +
 							"or password does not match");
 			return ResponseEntity.badRequest().build();
 		}
